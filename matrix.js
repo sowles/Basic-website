@@ -1,6 +1,7 @@
 //___________________________________________________________________________________________
 //Matrix Bank
     //Determinant and Inverse will be taken of Matrixa
+var matrixa = [1,3,2,4,5,4,3,2,3]
 var matrixb = [1,2,3,4,5,6,7,8,9]
 //___________________________________________________________________________________________
 //Equation Bank is legal and cool and cooler
