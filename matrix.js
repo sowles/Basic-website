@@ -6,7 +6,7 @@ var matrixb = [1,2,3,4,5,6,7,8,9]
 //___________________________________________________________________________________________
 //Equation Bank is legal and cool and cooler
 
-
+var george = "handsome"
 
 //Matrix Multiplier
 var Oneone = ((matrixa[0]*matrixb[0])+(matrixa[1]*matrixb[3])+(matrixa[2]*matrixb[6]))
