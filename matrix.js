@@ -80,7 +80,6 @@ document.write("");
 document.write("____________________________________________________");
 document.write("A+B:");
 document.write("");
-document.write(AplusB);
 document.write("");
 document.write("____________________________________________________");
 document.write("");
