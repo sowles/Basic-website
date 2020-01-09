@@ -6,7 +6,7 @@ import time
 matrixa = [3,-1,0,2,0,-1,-2,4,1]
 matrixb = [1,2,3,4,5,6,7,8,9]
 #___________________________________________________________________________________________
-#Equation Bank
+#Equation Bank is legal and cool and cooler
 
 AplusB = list(map(operator.add, matrixa,matrixb))
 
@@ -120,4 +120,3 @@ print (Doneminthreetwo)
 print (Doneminonethree)
 print (Donemintwothree)
 print (Doneminthreethree)
-
