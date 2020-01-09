@@ -9,7 +9,7 @@ matrixb = [1,2,3,4,5,6,7,8,9]
 #Equation Bank is legal and cool and cooler
 
 AplusB = list(map(operator.add, matrixa,matrixb))
-sup = 12 * 3
+
 #Matrix Multiplier
 Oneone = ((matrixa[0]*matrixb[0])+(matrixa[1]*matrixb[3])+(matrixa[2]*matrixb[6]))
 Onetwo = ((matrixa[0]*matrixb[1])+(matrixa[1]*matrixb[4])+(matrixa[2]*matrixb[7]))
