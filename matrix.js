@@ -1,12 +1,12 @@
 //___________________________________________________________________________________________
 //Matrix Bank
     //Determinant and Inverse will be taken of Matrixa
-var matrixa = [value.document.getElementByName("matrixa 1,1"),value.document.getElementByName("matrixa 1,2"),value.document.getElementByName("matrixa 1,3"),value.document.getElementByName("matrixa 2,1"),value.document.getElementByName("matrixa 2,2"),value.document.getElementByName("matrixa 2,3"),value.document.getElementByName("matrixa 3,1"),value.document.getElementByName("matrixa 3,2"),value.document.getElementByName("matrixa 3,3")]
+var matrixa = [value.document.getElementById("matrixa11"),value.document.getElementByName("matrixa12"),value.document.getElementByName("matrixa13"),value.document.getElementByName("matrixa21"),value.document.getElementByName("matrixa22"),value.document.getElementByName("matrixa23"),value.document.getElementByName("matrixa31"),value.document.getElementByName("matrixa32"),value.document.getElementByName("matrixa33")]
 var matrixb = [1,2,3,4,5,6,7,8,9]
 //___________________________________________________________________________________________
 //Equation Bank is legal and cool and cooler
 
-
+var george = "handsome"
 
 //Matrix Multiplier
 var Oneone = ((matrixa[0]*matrixb[0])+(matrixa[1]*matrixb[3])+(matrixa[2]*matrixb[6]))
