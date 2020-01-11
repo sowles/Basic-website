@@ -5,7 +5,14 @@ var matrixa = [value.document.getElementById("matrixa11"),value.document.getElem
 var matrixb = [1,2,3,4,5,6,7,8,9]
 //___________________________________________________________________________________________
 //Equation Bank is legal and cool and cooler
+<<<<<<< HEAD
 
+=======
+matrixa11.addEventListener("input", function() {
+  alert("hi");
+});
+var george = "handsome"
+>>>>>>> 2e057b13cd2d7dabee4f75184e3f7c9dd3ce1b7e
 
 //Matrix Multiplier
 var Oneone = ((matrixa[0]*matrixb[0])+(matrixa[1]*matrixb[3])+(matrixa[2]*matrixb[6]))
