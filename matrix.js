@@ -68,6 +68,47 @@ function calculate() {
 
   //___________________________________________________________________________________________
   //Printer
-
+  console.log("Matrix A:");
+  console.log("");
+  console.log(matrixa);
+  console.log("");
+  console.log("");
+  console.log("Matrix B:");
+  console.log("");
+  console.log(matrixb);
+  console.log("");
+  console.log("A+B:");
+  console.log("");
+  console.log("");
+  console.log("");
+  console.log("AxB:");
+  console.log("");
+  console.log(Oneone);
+  console.log(Onetwo);
+  console.log(Onethree);
+  console.log(Twoone);
+  console.log(Twotwo);
+  console.log(Twothree);
+  console.log(Threeone);
+  console.log(Threetwo);
+  console.log(Threethree);
+  console.log("");
+  console.log("");
+  console.log("Determinant:");
+  console.log("");
+  console.log(Deter);
+  console.log("");
+  console.log("");
+  console.log("Inverse of Matrix:");
+  console.log("");
+  console.log(Doneminoneone);
+  console.log(Donemintwoone);
+  console.log(Doneminthreeone);
+  console.log(Doneminonetwo);
+  console.log(Donemintwotwo);
+  console.log(Doneminthreetwo);
+  console.log(Doneminonethree);
+  console.log(Donemintwothree);
+  console.log(Doneminthreethree);
 }
 document.getElementById("calculateMatrixButton").addEventListener("click", calculate())
