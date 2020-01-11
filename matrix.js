@@ -2,7 +2,7 @@ function calculate() {
   //___________________________________________________________________________________________
   //Matrix Bank
       //Determinant and Inverse will be taken of Matrixa
-  var matrixa = [value.document.getElementById("matrixa11"),value.document.getElementById("matrixa12"),value.document.getElementById("matrixa13"),value.document.getElementById("matrixa21"),value.document.getElementById("matrixa22"),value.document.getElementById("matrixa23"),value.document.getElementById("matrixa31"),value.document.getElementById("matrixa32"),value.document.getElementById("matrixa33")]
+  var matrixa = [document.getElementById("matrixa11").value,document.getElementById("matrixa12").value,document.getElementById("matrixa13").value,document.getElementById("matrixa21").value,document.getElementById("matrixa22").vale,document.getElementById("matrixa23").value,document.getElementById("matrixa31").value,document.getElementById("matrixa32").value,document.getElementById("matrixa33").value]
   var matrixb = [1,2,3,4,5,6,7,8,9]
   //___________________________________________________________________________________________
   //Equation Bank is legal and cool and cooler
