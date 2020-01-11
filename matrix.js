@@ -111,4 +111,4 @@ function calculate() {
   console.log(Donemintwothree);
   console.log(Doneminthreethree);
 }
-document.getElementById("calculateMatrixButton").addEventListener("click", calculate())
+document.getElementById("calculateMatrixButton").addEventListener("click", calculate(), false)
