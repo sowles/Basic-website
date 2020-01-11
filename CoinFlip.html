@@ -1,6 +1,7 @@
 <html>
-<<body>
-  <<h1>Sowlesnet Coinflip</h1>
+<body>
+  <h1>Sowlesnet Coinflip</h1>
+  <h1 id = "result"></h1>
 </body>
 
 <script type="text/javascript">
@@ -8,6 +9,6 @@
       return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 
   }
-  alert(coinFlip());
+  document.getElementById("result").textContent = coinFlip();
 </script>
 </html>
