@@ -113,5 +113,5 @@ function calculate() {
   console.log(Doneminthreethree);
 }
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("calculateMatrixButton").addEventListener("hover", calculate(), false)
+  document.getElementById("calculateMatrixButton").addEventListener("hover", calculate(), true);
 }, false);
