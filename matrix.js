@@ -1,4 +1,5 @@
 function calculate() {
+  console.log("hello")
   //___________________________________________________________________________________________
   //Matrix Bank
       //Determinant and Inverse will be taken of Matrixa
