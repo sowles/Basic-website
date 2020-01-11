@@ -5,7 +5,9 @@ var matrixa = [value.document.getElementById("matrixa11"),value.document.getElem
 var matrixb = [1,2,3,4,5,6,7,8,9]
 //___________________________________________________________________________________________
 //Equation Bank is legal and cool and cooler
-
+matrixa11.addEventListener("input", function() {
+  alert("hi");
+});
 var george = "handsome"
 
 //Matrix Multiplier
