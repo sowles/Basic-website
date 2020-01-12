@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 console.log(binomial(8,3));
 console.log(binomial(10,2));
 
-    document.getElementById("result").textContent = ;
+    document.getElementById("result").textContent = coeff ;
 
   });
 });
