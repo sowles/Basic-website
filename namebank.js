@@ -9892,8 +9892,8 @@ var names = [
 "Zuzana"
 ];
 
-function getRandomInt(3000) {
+function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-alert(names[getRandomInt()])
+alert(names[getRandomInt(3000)])
