@@ -1,12 +1,13 @@
 <html>
 <body>
+  <body bgcolor = "grey" color = "white">
   <h1>Sowlesnet Coinflip</h1>
   <h1 id = "result"></h1>
 </body>
 
 <script type="text/javascript">
   function coinFlip() {
-      return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
+      return (Math.floor(Math.random() * 2) == 0) ? 'Heads' : 'Tails';
 
   }
   document.getElementById("result").textContent = coinFlip();
