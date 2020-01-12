@@ -18,7 +18,7 @@ var finalweight = document.getElementById("finalweight").value;
 //Equation
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("submitcalculations").addEventListener("click", function() {
-    document.getElementById("result").textContent = ((goal-currentGrade)*(100-finalweight))/finalweight;
+    document.getElementById("result").textContent ="ducky";
 
   });
 });
