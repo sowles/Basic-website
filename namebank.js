@@ -9896,4 +9896,4 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-document.getElementById("name").textContent = names[getRandomInt(3000)] + names[getRandomInt(3000)];
+document.getElementById("name").textContent = names[getRandomInt(3000)] + " " + names[getRandomInt(3000)];
