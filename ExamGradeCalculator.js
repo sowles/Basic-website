@@ -6,10 +6,15 @@
 //FW = Final Weight
 
 //var R
-var G = 82
-var C = 76
-var FW = 4
+
+
+var result;
+var goal = document.getElementById("currentGrade").value;
+var currentGrade = document.getElementById("wantedgrade").value;
+var finalweight = document.getElementById("finalweight").value;
+
+
 
 //Equation
 
-R = ((G-C)*(100-FW))/FW
+document.getElementById("result").textContent = ((goal-currentGrade)*(100-finalweight))/finalweight;
