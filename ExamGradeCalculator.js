@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var goal = document.getElementById("currentGrade").value;
     var currentGrade = document.getElementById("wantedgrade").value;
     var finalweight = document.getElementById("finalweight").value;
-    document.getElementById("result").textContent = ((goal-currentGrade)*(100-finalweight))/finalweight;
+    document.getElementById("result").textContent = ((goal-currentGrade)*(finalweight/100))/finalweight;
 
   });
 });
