@@ -4,7 +4,7 @@
 
  document.addEventListener("DOMContentLoaded", function() {
 
-   document.getElementById("calculateq").addEventListener("keyup", function() {
+   document.getElementById("calculateq").addEventListener("click", function() {
 
      var a = document.getElementById("QuadFormA").value;
      var b = document.getElementById("QuadFormB").value;
