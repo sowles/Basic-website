@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var numofelements = document.getElementById("elementinput");
     var maxnum = document.getElementById("digitinput");
     var evenconstraint = document.getElementById("constraintinput");
-    document.getElementById("result").textContent = (maxnum(Math.pow(b,numofelements))-(constraintinput(Math.pow(b,numofelements))));
+    document.getElementById("result").textContent = (Math.pow(maxnum,numofelements))-(Math.pow(constraintinput,numofelements));
 
   });
   });
