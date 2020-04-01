@@ -5,7 +5,7 @@ let matrix1 = new Array(
 )
 
 let matrix2 = new Array(
-                        [value.document.getElementById("matrixb11", value.document.getElementByName("matrixb12"), value.document.getElementByName("matrixb13")],
+                        [value.document.getElementById("matrixb11"), value.document.getElementByName("matrixb12"), value.document.getElementByName("matrixb13")],
                         [value.document.getElementById("matrixb21"), value.document.getElementById("matrixb22"), value.document.getElementById("matrixb23")],
                         [value.document.getElementById("matrixb31"), value.document.getElementById("matrixb32"), value.document.getElementById("matrixb33")]
 )
