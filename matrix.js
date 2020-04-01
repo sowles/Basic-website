@@ -1,5 +1,5 @@
 let matrix1 = new Array(
-                        [value.document.getElementById("matrixa11", value.document.getElementByName("matrixa12"), value.document.getElementByName("matrixa13")],
+                        [value.document.getElementById("matrixa11"), value.document.getElementByName("matrixa12"), value.document.getElementByName("matrixa13")],
                         [value.document.getElementById("matrixa21"), value.document.getElementById("matrixa22"), value.document.getElementById("matrixa23")],
                         [value.document.getElementById("matrixa31"), value.document.getElementById("matrixa32"), value.document.getElementById("matrixa33")]
 )
