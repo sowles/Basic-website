@@ -21,7 +21,7 @@ function addmatrix (matrix1, matrix2){
 
   return addmatrixFinal;
 }
-add matrixFinal = document.getElementById("result").textContent;
+addmatrixFinal = document.getElementById("result").textContent;
 function multmatrix(matrix1, matrix2){
   let matrixFinal = new Array();
 
