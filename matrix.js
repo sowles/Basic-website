@@ -1,3 +1,7 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  document.getElementById("calculateMatrixButton").addEventListener("click", function() {
 let matrix1 = new Array(
                         [value.document.getElementById("matrixa11"), value.document.getElementByName("matrixa12"), value.document.getElementByName("matrixa13")],
                         [value.document.getElementById("matrixa21"), value.document.getElementById("matrixa22"), value.document.getElementById("matrixa23")],
@@ -35,3 +39,4 @@ function multmatrix(matrix1, matrix2){
 }
 matrixFinal = document.getElementById("multresult").textContent;
 console.log(multmatrix(matrix1, matrix2).toString());
+}
