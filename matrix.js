@@ -38,5 +38,4 @@ function multmatrix(matrix1, matrix2){
   return matrixFinal;
 }
 matrixFinal = document.getElementById("multresult").textContent;
-console.log(multmatrix(matrix1, matrix2).toString());
-)}
+console.log(multmatrix(matrix1, matrix2).toString());}
