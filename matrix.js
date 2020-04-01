@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-  document.getElementById("calculateMatrixButton").addEventListener("click", function()) {
+  document.getElementById("calculateMatrixButton").addEventListener("click", function() {
 let matrix1 = new Array(
                         [value.document.getElementById("matrixa11"), value.document.getElementByName("matrixa12"), value.document.getElementByName("matrixa13")],
                         [value.document.getElementById("matrixa21"), value.document.getElementById("matrixa22"), value.document.getElementById("matrixa23")],
