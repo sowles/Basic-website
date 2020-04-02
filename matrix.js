@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix2 = new Array();
     let counter = 0;
     for (row in document.querySelectorAll('#matrix1Form section')) {
-      console.log(querySelectorAll('#matrix1Form section'));
+      console.log(document.querySelectorAll('#matrix1Form section'));
       counter ++;
       let rowArray = new Array();
       for (item in document.querySelectorAll('#matrix1Form > section')[row].children) {
