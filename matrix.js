@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (row in document.querySelector('#matrix1Form').children) {
       matrix1.push(new Array());
-      matrix1[row].push("duck");
+      console.log(row);
       // for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
       //   matrix1[row].push(item.value);
       // }
