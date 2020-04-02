@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix1 = new Array();
     let matrix2 = new Array();
 
-    for (row in document.querySelector('#matrix1Form').children) {
+    for (row in document.querySelectorAll('#matrix1Form > *')) {
       let rowArray = new Array();
-      // for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
+      for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
         rowArray.push("duck");
-      // }
+      }
       matrix1.push(rowArray);
     }
     // for (row in document.querySelector('#matrix2Form').children) {
