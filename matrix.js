@@ -44,5 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
     document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
+    console.log(matrix1);
   });
 });
