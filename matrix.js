@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix2 = new Array();
     let counter = 0;
     for (row in document.querySelectorAll('#matrix1Form > *')) {
-      counter ++
+      counter ++;
       let rowArray = new Array();
       for (item in document.querySelectorAll('#matrix1Form > *')[row].children) {
         rowArray.push(parseInt(document.querySelectorAll('#matrix1Form > *')[row].children[item].value));
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       matrix2.push(rowArray);
     }
+    console.log(counter);
     console.log(matrix1);
     document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
   });
