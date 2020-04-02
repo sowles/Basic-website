@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (row in document.querySelectorAll('#matrix1Form > *')) {
       let rowArray = new Array();
       for (item in document.querySelectorAll('#matrix1Form > *')[row].children) {
-        rowArray.push(document.querySelectorAll('#matrix1Form > *')[row].children[item].value);
+        rowArray.push(parseInt(document.querySelectorAll('#matrix1Form > *')[row].children[item].value));
       }
       matrix1.push(rowArray);
     }
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (row in document.querySelectorAll('#matrix2Form > *')) {
       let rowArray = new Array();
       for (item in document.querySelectorAll('#matrix2Form > *')[row].children) {
-        rowArray.push(document.querySelectorAll('#matrix2Form > *')[row].children[item].value);
+        rowArray.push(parseInt(document.querySelectorAll('#matrix2Form > *')[row].children[item].value));
       }
       matrix2.push(rowArray);
     }
