@@ -43,6 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
         matrix2[row].push(item.value);
       }
     }
-    document.getElementById("result").textContent = addmatrix(matrix1, matrix2);
+    document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
   });
 });
