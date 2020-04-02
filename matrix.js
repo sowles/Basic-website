@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (row in matrix1Form.childNodes) {
       matrix1.push(new Array());
       for (item in matrix1Form[row].childNodes) {
-        matrix1[i].push(item.value);
+        matrix1[row].push(item.value);
       }
     }
     matrix2Form = document.getElementById("matrix2Form");
