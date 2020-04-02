@@ -32,15 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
     for (row in document.querySelectorAll('#matrix1Form > section')) {
       counter ++;
       let rowArray = new Array();
-      for (item in document.querySelectorAll('#matrix1Form > *')[row].children) {
+      for (item in document.querySelectorAll('#matrix1Form > section')[row].children) {
         rowArray.push(parseInt(document.querySelectorAll('#matrix1Form > *')[row].children[item].value));
       }
       matrix1.push(rowArray);
     }
 
-    for (row in document.querySelectorAll('#matrix2Form > *')) {
+    for (row in document.querySelectorAll('#matrix2Form > section')) {
       let rowArray = new Array();
-      for (item in document.querySelectorAll('#matrix2Form > *')[row].children) {
+      for (item in document.querySelectorAll('#matrix2Form > section')[row].children) {
         rowArray.push(parseInt(document.querySelectorAll('#matrix2Form > *')[row].children[item].value));
       }
       matrix2.push(rowArray);
