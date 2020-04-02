@@ -31,19 +31,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (row in document.querySelectorAll('#matrix1Form > *')) {
       let rowArray = new Array();
-      console.log(document.querySelectorAll('#matrix1Form > *')[row]);
-      for (item in document.querySelectorAll('#matrix1Form > *')[row]) {
-        rowArray.push("duck");
+      for (item in document.querySelectorAll('#matrix1Form > *')[row].children) {
+        rowArray.push(document.querySelectorAll('#matrix1Form > *')[row].children[item].value);
       }
       matrix1.push(rowArray);
     }
-    // for (row in document.querySelector('#matrix2Form').children) {
-    //   matrix2.push(new Array());
-    //   for (item in document.querySelector('#matrix2Form').children[row].childNodes) {
-    //     matrix2[row].push(item.value);
-    //   }
-    // }
-    // document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
-    console.log(matrix1);
+
+    for (row in document.querySelectorAll('#matrix2Form > *')) {
+      let rowArray = new Array();
+      for (item in document.querySelectorAll('#matrix2Form > *')[row].children) {
+        rowArray.push(document.querySelectorAll('#matrix2Form > *')[row].children[item].value);
+      }
+      matrix2.push(rowArray);
+    }
+    document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
   });
 });
