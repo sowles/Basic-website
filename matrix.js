@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(document.querySelectorAll('#matrix1Form section'));
       counter ++;
       let rowArray = new Array();
-      for (let item of document.querySelectorAll('#matrix1Form > section')[row].children) {
+      for (let item in document.querySelectorAll('#matrix1Form > section')[row].children) {
         rowArray.push(parseInt(document.querySelectorAll('#matrix1Form > *')[row].children[item].value));
       }
       matrix1.push(rowArray);
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let row of document.querySelectorAll('#matrix2Form section')) {
       let rowArray = new Array();
-      for (let item of document.querySelectorAll('#matrix2Form section')[row].children) {
+      for (let item in document.querySelectorAll('#matrix2Form section')[row].children) {
         rowArray.push(parseInt(document.querySelectorAll('#matrix2Form > *')[row].children[item].value));
       }
       matrix2.push(rowArray);
