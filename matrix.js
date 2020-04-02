@@ -1,19 +1,3 @@
-
-document.addEventListener("DOMContentLoaded", function() {
-
-  document.getElementById("calculateMatrixButton").addEventListener("click", function() {
-let matrix1 = new Array(
-                        [value.document.getElementById("matrixa11"), value.document.getElementById("matrixa12"), value.document.getElementById("matrixa13")],
-                        [value.document.getElementById("matrixa21"), value.document.getElementById("matrixa22"), value.document.getElementById("matrixa23")],
-                        [value.document.getElementById("matrixa31"), value.document.getElementById("matrixa32"), value.document.getElementById("matrixa33")]
-)
-
-let matrix2 = new Array(
-                        [value.document.getElementById("matrixb11"), value.document.getElementById("matrixb12"), value.document.getElementById("matrixb13")],
-                        [value.document.getElementById("matrixb21"), value.document.getElementById("matrixb22"), value.document.getElementById("matrixb23")],
-                        [value.document.getElementById("matrixb31"), value.document.getElementById("matrixb32"), value.document.getElementById("matrixb33")]
-)
-
 function addmatrix (matrix1, matrix2){
   let addmatrixFinal = new Array();
 
@@ -25,7 +9,7 @@ function addmatrix (matrix1, matrix2){
 
   return addmatrixFinal;
 }
-addmatrixFinal = document.getElementById("result").textContent;
+
 function multmatrix(matrix1, matrix2){
   let matrixFinal = new Array();
 
@@ -37,7 +21,28 @@ function multmatrix(matrix1, matrix2){
 
   return matrixFinal;
 }
-matrixFinal = document.getElementById("multresult").textContent;
-console.log(multmatrix(matrix1, matrix2).toString());
-})
-})
+
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  document.getElementById("calculateMatrixButton").addEventListener("click", function() {
+    let matrix1 = new Array();
+    let matrix2 = new Array();
+
+    matrix1Form = document.getElementById("matrix1Form");
+    for (row in matrix1Form.childNodes) {
+      matrix1.push(new Array());
+      for (item in matrix1Form[row].childNodes) {
+        matrix1[i].push(item.value);
+      }
+    }
+    matrix2Form = document.getElementById("matrix2Form");
+    for (row in matrix2Form.childNodes) {
+      matrix2.push(new Array());
+      for (item in matrix2Form[row].childNodes) {
+        matrix2[i].push(item.value);
+      }
+    }
+    document.getElementById("result").textContent = addmatrix(matrix1, matrix2);
+  });
+});
