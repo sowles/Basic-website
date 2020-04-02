@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (row in document.querySelectorAll('#matrix1Form > *')) {
       let rowArray = new Array();
+      console.log(document.querySelectorAll('#matrix1Form > *')[row]);
       for (item in document.querySelectorAll('#matrix1Form > *')[row]) {
         rowArray.push("duck");
       }
