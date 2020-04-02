@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
     matrix1Form = document.getElementById("matrix1Form");
     for (row in matrix1Form.childNodes) {
       matrix1.push(new Array());
-      for (item in matrix1Form[row].childNodes) {
+      for (item in matrix1Form.childNodes[row].childNodes) {
         matrix1[row].push(item.value);
       }
     }
     matrix2Form = document.getElementById("matrix2Form");
     for (row in matrix2Form.childNodes) {
       matrix2.push(new Array());
-      for (item in matrix2Form[row].childNodes) {
+      for (item in matrix2Form.childNodes[row].childNodes) {
         matrix2[i].push(item.value);
       }
     }
