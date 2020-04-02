@@ -29,21 +29,19 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix1 = new Array();
     let matrix2 = new Array();
 
-    matrix1Form = document.getElementById("matrix1Form");
-    for (row in matrix1Form.childNodes) {
+    for (row in document.querySelector('#matrix1Form').children) {
       matrix1.push(new Array());
-      for (item in matrix1Form.childNodes[row].childNodes) {
+      for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
         matrix1[row].push(item.value);
       }
     }
-    matrix2Form = document.getElementById("matrix2Form");
-    for (row in matrix2Form.childNodes) {
+    for (row in document.querySelector('#matrix2Form').children) {
       matrix2.push(new Array());
-      for (item in matrix2Form.childNodes[row].childNodes) {
+      for (item in document.querySelector('#matrix2Form').children[row].childNodes) {
         matrix2[row].push(item.value);
       }
     }
     document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
-    console.log(matrix1); 
+    console.log(matrix1);
   });
 });
