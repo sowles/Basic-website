@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix1 = new Array();
     let matrix2 = new Array();
     let counter = 0;
-    for (row in document.querySelectorAll('#matrix1Form > section')) {
+    for (row in document.querySelectorAll('#matrix1Form section')) {
       counter ++;
       let rowArray = new Array();
       for (item in document.querySelectorAll('#matrix1Form > section')[row].children) {
@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
       matrix1.push(rowArray);
     }
 
-    for (row in document.querySelectorAll('#matrix2Form > section')) {
+    for (row in document.querySelectorAll('#matrix2Form section')) {
       let rowArray = new Array();
-      for (item in document.querySelectorAll('#matrix2Form > section')[row].children) {
+      for (item in document.querySelectorAll('#matrix2Form section')[row].children) {
         rowArray.push(parseInt(document.querySelectorAll('#matrix2Form > *')[row].children[item].value));
       }
       matrix2.push(rowArray);
