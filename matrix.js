@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix2 = new Array();
 
     for (row in document.querySelector('#matrix1Form').children) {
-      matrix1.push(new Array());
-      console.log(row);
-      // for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
-      //   matrix1[row].push(item.value);
-      // }
+      let rowArray = new Array();
+      for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
+        rowArray.push(item.value);
+      }
+      matrix1.push(rowArray);
     }
     // for (row in document.querySelector('#matrix2Form').children) {
     //   matrix2.push(new Array());
