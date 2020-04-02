@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (row in matrix2Form.childNodes) {
       matrix2.push(new Array());
       for (item in matrix2Form.childNodes[row].childNodes) {
-        matrix2[i].push(item.value);
+        matrix2[row].push(item.value);
       }
     }
     document.getElementById("result").textContent = addmatrix(matrix1, matrix2);
