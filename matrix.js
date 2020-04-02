@@ -31,17 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (row in document.querySelector('#matrix1Form').children) {
       matrix1.push(new Array());
-      for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
-        matrix1[row].push(item.value);
-      }
+      matrix1[row].push("duck");
+      // for (item in document.querySelector('#matrix1Form').children[row].childNodes) {
+      //   matrix1[row].push(item.value);
+      // }
     }
-    for (row in document.querySelector('#matrix2Form').children) {
-      matrix2.push(new Array());
-      for (item in document.querySelector('#matrix2Form').children[row].childNodes) {
-        matrix2[row].push(item.value);
-      }
-    }
-    document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
+    // for (row in document.querySelector('#matrix2Form').children) {
+    //   matrix2.push(new Array());
+    //   for (item in document.querySelector('#matrix2Form').children[row].childNodes) {
+    //     matrix2[row].push(item.value);
+    //   }
+    // }
+    // document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
     console.log(matrix1);
   });
 });
