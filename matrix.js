@@ -22,7 +22,7 @@ function multmatrix(matrix1, matrix2){
 
   return matrixFinal;
 }
-// ok push
+
 document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById("calculateMatrixButton").addEventListener("click", function() {
@@ -45,5 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
       matrix2.push(rowArray);
     }
     document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
+    document.getElementById("multResult").textContent = multmatrix(matrix1, matrix2);
   });
 });
