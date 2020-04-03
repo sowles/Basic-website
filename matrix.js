@@ -21,15 +21,13 @@ function multmatrix(matrix1, matrix2){
 
   return matrixFinal;
 }
-
-
+push it might
 document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById("calculateMatrixButton").addEventListener("click", function() {
     let matrix1 = new Array();
     let matrix2 = new Array();
-    let counter = 0;
-    for (let row of document.querySelectorAll('#matrix2Form > section')) {
+    for (let row of document.querySelectorAll('#matrix1Form > section')) {
       let rowArray = new Array();
       for (let item in row.children) {
         rowArray.push(parseInt(row.children[item].value));
@@ -44,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       matrix2.push(rowArray);
     }
-    console.log(counter);
     console.log(matrix1);
+    console.log(matrix2);
     document.getElementById("additionResult").textContent = addmatrix(matrix1, matrix2);
   });
 });
