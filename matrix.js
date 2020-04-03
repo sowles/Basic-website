@@ -27,8 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("calculateMatrixButton").addEventListener("click", function() {
     let matrix1 = new Array();
     let matrix2 = new Array();
+
     for (let row of document.querySelectorAll('#matrix1Form > section')) {
       let rowArray = new Array();
+      console.log(row.children);
       for (let item in row.children) {
         rowArray.push(parseInt(row.children[item].value));
       }
