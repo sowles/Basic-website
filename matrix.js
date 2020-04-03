@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let rowArray = new Array();
       console.log(row.children);
       for (let item of row.children) {
-        rowArray.push(parseInt(row.children[item].value));
+        rowArray.push(parseInt(item.value));
       }
       matrix1.push(rowArray);
     }
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let row of document.querySelectorAll('#matrix2Form > section')) {
       let rowArray = new Array();
       for (let item of row.children) {
-        rowArray.push(parseInt(row.children[item].value));
+        rowArray.push(parseInt(item.value));
       }
       matrix2.push(rowArray);
     }
