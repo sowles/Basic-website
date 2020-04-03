@@ -17,11 +17,12 @@ function multmatrix(matrix1, matrix2){
     for (item in matrix1[row]) {
       matrixFinal.push(matrix1[row][item] * matrix2[item][row]);
     }
+    matrixFinal
   }
 
   return matrixFinal;
 }
-// one last time IT WORKS!!! YYYYYAAAAAAAAAAAAAYAYYAYAYAYAA
+// ok push
 document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById("calculateMatrixButton").addEventListener("click", function() {
