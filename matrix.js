@@ -21,7 +21,7 @@ function multmatrix(matrix1, matrix2){
 
   return matrixFinal;
 }
-// wait our chat wasn't commented out that could make it not work. push again.
+// push again
 document.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById("calculateMatrixButton").addEventListener("click", function() {
