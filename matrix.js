@@ -30,20 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
     let matrix2 = new Array();
     let counter = 0;
     for (let row of document.querySelectorAll('#matrix2Form > section')) {
-      console.log(row);
-
-      counter ++;
       let rowArray = new Array();
-      for (let item in document.querySelectorAll('#matrix1Form > section')[row].children) {
-        rowArray.push(parseInt(document.querySelectorAll('#matrix2Form > section')[row].children[item].value));
+      for (let item in row.children) {
+        rowArray.push(parseInt(row.children[item].value));
       }
       matrix1.push(rowArray);
     }
 
     for (let row of document.querySelectorAll('#matrix2Form > section')) {
       let rowArray = new Array();
-      for (let item in document.querySelectorAll('#matrix2Form > section')[row].children) {
-        rowArray.push(parseInt(document.querySelectorAll('#matrix2Form > section')[row].children[item].value));
+      for (let item in row.children) {
+        rowArray.push(parseInt(row.children[item].value));
       }
       matrix2.push(rowArray);
     }
