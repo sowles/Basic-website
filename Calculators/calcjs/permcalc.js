@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("That is a negative number")
         return;
       }else{
-        int = int*factorial(int-1);
-        return(int);
+        
+        return(int*factorial(int-1)
       }
     };
     document.getElementById("result").textContent = (factorial(n))/(factorial(n-r));
