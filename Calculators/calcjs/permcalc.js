@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }else{
         int = int*factorial(int-1);
-        log(1)
+        console.log()
         return(int);
       }
     };
