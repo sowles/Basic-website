@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var n = document.getElementById("permn").value;
     var r = document.getElementById("permr").value;
 
-    if (n < 0 || (n-r < 0)) {
+    if (n < 0 || r < 0 || (n-r < 0)) {
       document.getElementById("result").textContent = "Yo, you're negative dawg";
     }
     else {
