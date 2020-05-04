@@ -6,16 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
     var n = document.getElementById("permn").value;
     var r = document.getElementById("permr").value;
     var factorial = function(int){
-      if (int === 0){
-        return 1;
-      }
-      else if (int < 0) {
-        invalidResult = true;
-      }
-      else {
+      if (int > 0){
         int = int*factorial(int-1);
         console.log(1)
         return(int);
+      }
+      else if (int == 0) {
+        return 1;
+      }
+      else {
+        invalidResult = true;
       }
     };
     if (invalidResult) {
