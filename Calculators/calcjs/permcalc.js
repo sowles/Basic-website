@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var factorial = function(int){
       if (int === 0){
         return 1
-      }else if (int < 0){
-        document.getElementById("result").textContent = ("That is a negative number")
-        return;
       }else{
         int = int*factorial(int-1);
         console.log(1)
