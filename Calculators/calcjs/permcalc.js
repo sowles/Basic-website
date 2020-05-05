@@ -1,4 +1,4 @@
-var factfunc = function (i){
+function factfunc(i){
   if (i > 0){
   i = i*factfunc(i-1)
 }else if (i == 0){
