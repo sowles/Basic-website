@@ -1,9 +1,9 @@
-function factorial(int){
-  if (int > 0) {
-    int = int*factorial(int-1);
-    return(int);
+function factfunc(i){
+  if (i > 0) {
+    i = i*factfunc(i-1);
+    return(i);
   }
-  else if (int == 0) {
+  else if (i == 0) {
     return 1;
   }
   else {
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var r = document.getElementById("permr").value;
 
     if (n < 0 || r < 0 || (n-r < 0)) {
-      document.getElementById("result").textContent = "Yo, you're negative dawg";
+      document.getElementById("result").textContent = "That is negative";
     }
     else {
-      document.getElementById("result").textContent = (factorial(n))/(factorial(n-r));
+      document.getElementById("result").textContent = (factfunc(n))/(factfunc(n-r));
     }
   });
 });
