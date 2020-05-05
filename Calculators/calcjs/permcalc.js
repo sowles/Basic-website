@@ -1,13 +1,13 @@
 function factfunc(i){
-  if (i > 0){
+  if (i > 0) {
   i = i*factfunc(i-1)
+  return(i);
 }else if (i == 0){
-  return 1
+  return 1;
 }else{
-  return 0
+  return 0;
 }
 };
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
