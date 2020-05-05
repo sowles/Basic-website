@@ -1,7 +1,6 @@
 function factorial(int){
   if (int > 0) {
     int = int*factorial(int-1);
-    console.log(1)
     return(int);
   }
   else if (int == 0) {
