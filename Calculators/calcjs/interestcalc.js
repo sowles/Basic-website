@@ -15,8 +15,8 @@
      var compoundedcont = Math.pow(p*e,r*t);
 //document.getElementById("result1").textContent = a+b+c;
 
-     document.getElementById("result1").textContent = compounded
+     document.getElementById("result2").textContent = compounded
 
-     document.getElementById("result2").textContent = compoundedcont
+     document.getElementById("result1").textContent = compoundedcont
    });
  });
