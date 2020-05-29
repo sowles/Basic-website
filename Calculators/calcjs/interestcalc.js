@@ -7,7 +7,7 @@
    document.getElementById("calculateq").addEventListener("click", function() {
 
      var p = document.getElementById("p").value;
-     var r = document.getElementById("r").value;
+     var r = (document.getElementById("r").value/100);
      var t = document.getElementById("t").value;
      var n = document.getElementById("n").value;
      var e = 2.71828;
