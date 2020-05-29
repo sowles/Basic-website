@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var initial = document.getElementById("initial").value;
     var ending = document.getElementById("ending").value;
     var dividends = document.getElementById("dividends").value;
-    document.getElementById("result").textContent = initial - ending + dividends;
+    document.getElementById("result").textContent = (initial - ending) + dividends;
 
   });
 });
