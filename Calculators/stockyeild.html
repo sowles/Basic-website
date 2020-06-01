@@ -3,6 +3,27 @@
   <link rel = 'icon' href = 'webfav/favicon.ico' type='image/x-icon'/>
 <title>Sowlesnet</title>
 <script defer src = "calcjs/stockyeild.js"></script>
+<style>
+#form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 25px;
+  gap: 25px;
+}
+
+#form section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#form section label {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+</style>
 </head>
 
 <body bgcolor = "grey">
@@ -10,15 +31,31 @@
   <h1>Sowlesnet Total Stock Return Calculator</h1>
 
 
-  <form>
+  <form id = "form">
     <section>
-      Number of shares purchased<input type = "number" id = "sharesBought" value = "1" required>
-      Initial Price<input type = "number" id = "initial" required>
+      <label>
+        <span>Number of shares purchased</span>
+        <input type = "number" id = "sharesBought" value = "1" required>
+      </label>
+      <label>
+        <span>Initial Price<input type = "number" id = "initial" required>
+      </label>
     </section>
     <section>
-      Ending Price<input type = "number" id = "ending" required>
-      Number of shares sold<input type = "number" id = "sharesSold" value = "1" required>
-      Dividends<input type = "number" id = "dividends"  value = "0" required>
+      <label>
+        <span>Ending Price</span>
+        <input type = "number" id = "ending" required>
+      </label>
+      <label>
+        <span>Number of shares sold</span>
+        <input type = "number" id = "sharesSold" value = "1" required>
+      </label>
+    </section>
+    <section>
+       <label>
+         <span>Dividends</span>
+         <input type = "number" id = "dividends"  value = "0" required>
+       </label>
     </section>
   </form>
 
