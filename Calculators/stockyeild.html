@@ -11,11 +11,15 @@
 
 
   <form>
-    Number of shares purchased<input type = "number" id = "sharesBought" value = "1">
-    Initial Price<input type = "number" id = "initial">
-    Ending Price<input type = "number" id = "ending">
-    Number of shares sold<input type = "number" id = "sharesSold" value = "1">
-    Dividends<input type = "number" id = "dividends">
+    <section>
+      Number of shares purchased<input type = "number" id = "sharesBought" value = "1" required>
+      Initial Price<input type = "number" id = "initial" required>
+    </section>
+    <section>
+      Ending Price<input type = "number" id = "ending" required>
+      Number of shares sold<input type = "number" id = "sharesSold" value = "1" required>
+      Dividends<input type = "number" id = "dividends" required>
+    </section>
   </form>
 
 <button id = "submitcalculations">subcalc</button>
