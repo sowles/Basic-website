@@ -7,20 +7,19 @@
 #form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 950px;
-  margin: 0 auto;
   padding: 25px;
-  gap: 25px;
+  gap: 50px;
 }
 
 #form section {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 25px;
 }
 
 #form section label {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
 }
 
 </style>
@@ -38,7 +37,8 @@
         <input type = "number" id = "sharesBought" value = "1" required>
       </label>
       <label>
-        <span>Initial Price<input type = "number" id = "initial" required>
+        <span>Initial Price</span>
+        <input type = "number" id = "initial" required>
       </label>
     </section>
     <section>
