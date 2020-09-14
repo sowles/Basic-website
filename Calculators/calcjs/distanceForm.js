@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var x3 = document.getElementById("y1").value;
     var x4 = document.getElementById("y2").value;
     // var formResult = (Math.sqrt(Math.pow((x1 - x2),2) + (Math.pow((y1 - y2),2))));
-    var formResult = Math.sqrt(4);
-    console.log(formResult) 
+    var formResult = Math.sqrt(x1);
+    console.log(formResult)
 
 //document.getElementById("result1").textContent = a+b+c;
 
