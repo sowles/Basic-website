@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var x1 = document.getElementById("x1").value;
     var x2 = document.getElementById("x2").value;
-    var x3 = document.getElementById("y1").value;
-    var x4 = document.getElementById("y2").value;
+    var y1 = document.getElementById("y1").value;
+    var y2 = document.getElementById("y2").value;
     // var formResult = (Math.sqrt(Math.pow((x1 - x2),2) + (Math.pow((y1 - y2),2))));
     var formResult = (Math.sqrt(Math.pow((x1 - y1), 2) + (Math.pow(x2-y2), 2)));
     console.log(formResult)
