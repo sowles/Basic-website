@@ -81,7 +81,7 @@
 
                 <div class="project-card">
                     <div class="project-icon">
-                        <img src="artifact-transparent-01.svg" alt="Artifact Chat" class="project-svg-icon">
+                        <img src="Mediamodifier-Design.svg" alt="Artifact Chat" class="project-svg-icon">
                     </div>
                     <h3 class="project-title">Artifact Chat</h3>
                     <p class="project-description">
@@ -261,15 +261,28 @@
 
         // Copy email function
         function copyEmail() {
-            const email = 'contact@sowlesnet.com';
+            const email = 'sowlesgeorge@gmail.com';
+            const button = event.target;
+            
+            // Store original state
+            const originalText = button.textContent;
+            const originalBorderColor = button.style.borderColor || '#3498db';
+            const originalColor = button.style.color || '#3498db';
+            
+            // Apply green checkmark state
+            button.innerHTML = '<i class="fas fa-check"></i>';
+            button.style.borderColor = '#27ae60';
+            button.style.color = '#27ae60';
+            button.style.backgroundColor = 'transparent';
+            
             navigator.clipboard.writeText(email).then(() => {
-                // Show feedback
-                const button = event.target;
-                const originalText = button.textContent;
-                button.textContent = 'Copied!';
+                // Revert to original state after 1 second
                 setTimeout(() => {
                     button.textContent = originalText;
-                }, 2000);
+                    button.style.borderColor = originalBorderColor;
+                    button.style.color = originalColor;
+                    button.style.backgroundColor = '';
+                }, 1000);
             }).catch(() => {
                 // Fallback for older browsers
                 const textArea = document.createElement('textarea');
@@ -279,12 +292,13 @@
                 document.execCommand('copy');
                 document.body.removeChild(textArea);
                 
-                const button = event.target;
-                const originalText = button.textContent;
-                button.textContent = 'Copied!';
+                // Revert to original state after 1 second
                 setTimeout(() => {
                     button.textContent = originalText;
-                }, 2000);
+                    button.style.borderColor = originalBorderColor;
+                    button.style.color = originalColor;
+                    button.style.backgroundColor = '';
+                }, 1000);
             });
         }
 
