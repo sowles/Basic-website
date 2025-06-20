@@ -1,40 +1,331 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel = 'icon' href = 'webfav/favicon.ico' type='image/x-icon'/>
-<title>Sowlesnet</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>George Sowles - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body bgcolor = "grey" color = "white">
-<h1>Sowlesnet</h1><img src = "logo.png" height = 50 width = 50>
-
-<nav>
-  <ul>
-    <h3>Directory</h3>
-    <ul>
-      <h4>Projects</h4>
-        <ul>
-
-          <!--<li><a href="CoinFlip.html">CoinFlip</a></li>-->
-          <!--<li><a href="physiscsequations.html">Physics Toolbox</a></li>-->
-          <li><a href="Stockpriceanalyzer.html">Stock Price Analyzer</a></li>
-          <li><a href="http://noteberry.sowlesnet.com">Noteberry</a></li>
-          <!-- <li><a href="http://forum.sowlesnet.com/">Forum</a> ← you are probably looking for this</li> -->
-          <li><a href="http://rata.sowlesnet.com/">Ratachat</a>
-          <h4>  Outdated:  </h4>
-          <li><a href="https://meet.sowlesnet.com/">Meet</a>
-        </ul>
-          <h4>Misc.</h4>
-            <ul>
-              <li><a href="Calculators.html">Calculators</a></li>
-              <li><a href="Generators.html">Generators</a></li>
-              <!--<li><a href="links.html">Links</a></li>-->
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">George Sowles</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-    </ul>
-  </ul>
-</nav>
-<h5>Sowles Network © 2013-<script>document.write(new Date().getFullYear())</script></h5>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1 class="hero-title">George Sowles</h1>
+                    <h2 class="hero-subtitle">Developer & Problem Solver</h2>
+                    <p class="hero-description">
+                        Building innovative web applications and mathematical tools with a focus on practical solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="headshot.jpeg" alt="George Sowles" class="hero-headshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 class="project-title">Persona</h3>
+                    <p class="project-description">
+                        Self-improvement and social networking iOS app based on personality psychology.
+                    </p>
+                    <a href="https://apps.apple.com/us/app/persona-analysis/id6479545955?platform=iphone" class="project-link" target="_blank">
+                        View on App Store <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <img src="artifact-transparent-01.svg" alt="Artifact Chat" class="project-svg-icon">
+                    </div>
+                    <h3 class="project-title">Artifact Chat</h3>
+                    <p class="project-description">
+                        Revolutionary AI assistant feature that creates interactive web-based content, visualizations, and applications directly within chat conversations for enhanced user experiences.
+                    </p>
+                    <a href="https://artifact.chat/about" class="project-link" target="_blank">
+                        Learn More <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="project-title">Ratachat</h3>
+                    <p class="project-description">
+                        Real-time chat application enabling seamless communication with modern web technologies.
+                    </p>
+                    <a href="http://rata.sowlesnet.com/" class="project-link" target="_blank">
+                        View Project <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-cuttlefish"></i>
+                    </div>
+                    <h3 class="skill-title">C</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3 class="skill-title">C++</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="skill-title">Java</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-title">Python</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3 class="skill-title">Unix Systems</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-title">HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-title">CSS</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-title">SQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-title">Git</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="skill-title">JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-title">React</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-title">Node.js</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <h3 class="skill-title">Angular</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3 class="skill-title">AWS</h3>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3 class="skill-title">Docker</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Interested in collaborating or have questions about any of my projects? 
+                    I'd love to hear from you.
+                </p>
+                <div class="contact-buttons">
+                    <button onclick="copyEmail()" class="tool-link">Copy Email</button>
+                    <a href="https://linkedin.com/in/georgesowles" class="tool-link" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Sowles Network</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2013-<span id="current-year"></span> Sowles Network. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Copy email function
+        function copyEmail() {
+            const email = 'contact@sowlesnet.com';
+            navigator.clipboard.writeText(email).then(() => {
+                // Show feedback
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
